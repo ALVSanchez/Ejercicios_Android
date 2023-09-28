@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividad2">
+
+    <SeekBar
+        android:id="@+id/u2e2SbRojo"
+        android:layout_width="270dp"
+        android:layout_height="51dp"
+        android:backgroundTintMode="add"
+        android:indeterminate="false"
+        android:max="255"
+        android:progress="0"
+        android:progressBackgroundTint="#FF0000"
+        android:progressTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <SeekBar
+        android:id="@+id/u2e2SbAzul"
+        android:layout_width="270dp"
+        android:layout_height="51dp"
+        android:indeterminate="false"
+        android:max="255"
+        android:progress="0"
+        android:progressBackgroundTint="#0000FF"
+        android:progressTint="#0000FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <SeekBar
+        android:id="@+id/u2e2SbVerde"
+        android:layout_width="270dp"
+        android:layout_height="51dp"
+        android:indeterminate="false"
+        android:max="255"
+        android:progress="0"
+        android:progressBackgroundTint="#00FF00"
+        android:progressTint="#00FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <TextView
+        android:id="@+id/u2e2TvPrueba"
+        android:layout_width="275dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="164dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2BtToggle" />
+
+    <ToggleButton
+        android:id="@+id/u2e2BtToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="BLANCO"
+        android:textOn="NEGRO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2SbAzul" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
