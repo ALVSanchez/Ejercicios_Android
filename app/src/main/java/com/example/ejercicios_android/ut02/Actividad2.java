@@ -1,4 +1,4 @@
-package com.example.ejercicios_android;
+package com.example.ejercicios_android.ut02;
 
 import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+import com.example.ejercicios_android.R;
 
 public class Actividad2 extends AppCompatActivity {
 
@@ -67,12 +69,14 @@ public class Actividad2 extends AppCompatActivity {
         azul.setOnSeekBarChangeListener(listener);
 
         toggle.setOnClickListener((View v) -> {
-            if(toggle.isChecked()){
+            if(!toggle.isChecked()){
                 texto.setTextColor(Color.rgb(0,0,0));
             } else {
                 texto.setTextColor(Color.rgb(255,255,255));
             }
         });
+
+        texto.setTextColor(Color.rgb(0,0,0));
 
     }
 }

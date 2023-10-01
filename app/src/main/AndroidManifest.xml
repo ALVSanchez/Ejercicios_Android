@@ -16,7 +16,7 @@
             android:name=".ut02.Actividad1"
             android:exported="false" />
         <activity
-            android:name=".Actividad2"
+            android:name=".ut02.Actividad2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Actividad2">
+    tools:context=".ut02.Actividad2">
 
     <SeekBar
         android:id="@+id/u2e2SbRojo"
@@ -75,8 +75,8 @@
         android:layout_marginTop="24dp"
         android:checked="false"
         android:text="ToggleButton"
-        android:textOff="BLANCO"
-        android:textOn="NEGRO"
+        android:textOff="NEGRO"
+        android:textOn="BLANCO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/u2e2SbAzul" />
