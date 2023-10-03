@@ -60,13 +60,15 @@
         android:layout_width="275dp"
         android:layout_height="91dp"
         android:layout_marginBottom="164dp"
+        android:gravity="center"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u2e2BtToggle" />
+        app:layout_constraintTop_toBottomOf="@+id/u2e2BtToggle"
+        app:layout_constraintVertical_bias="0.227" />
 
     <ToggleButton
         android:id="@+id/u2e2BtToggle"
@@ -80,5 +82,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/u2e2SbAzul" />
+
+    <EditText
+        android:id="@+id/u2e2eTEntrada"
+        android:layout_width="269dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Texto a mostrar"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/u2e2SbRojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
