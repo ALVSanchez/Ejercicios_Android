@@ -1,4 +1,4 @@
-package com.example.ejercicios_android;
+package com.example.ejercicios_android.ut02;
 
 import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+import com.example.ejercicios_android.R;
 
 public class Actividad2 extends AppCompatActivity {
 
@@ -54,6 +56,7 @@ public class Actividad2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity2_main);
+
 
         rojo = findViewById(R.id.u2e2SbRojo);
         verde = findViewById(R.id.u2e2SbVerde);
