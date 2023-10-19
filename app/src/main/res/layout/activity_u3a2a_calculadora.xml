@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="false"
+    android:fitsSystemWindows="false"
     tools:context=".ut03.u3a2aCalculadora">
 
     <EditText
@@ -11,13 +13,14 @@
         android:layout_width="344dp"
         android:layout_height="65dp"
         android:ems="10"
+        android:hint="Operando 1"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintVertical_bias="0.232" />
 
     <RadioGroup
         android:id="@+id/u3a2aRgOperacion"
@@ -61,6 +64,20 @@
             android:textSize="20sp" />
     </RadioGroup>
 
+    <EditText
+        android:id="@+id/u3a2aEtOperando2"
+        android:layout_width="344dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:hint="Operando 2"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/u3a2aEtOperando1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a2aEtOperando1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
     <TextView
         android:id="@+id/u3a2aTvError"
         android:layout_width="wrap_content"
@@ -72,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.547" />
 
     <Button
         android:id="@+id/u3a2aBtCalcular"
@@ -82,22 +99,24 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintVertical_bias="0.636" />
 
-    <EditText
-        android:id="@+id/u3a2aEtOperando2"
-        android:layout_width="344dp"
-        android:layout_height="69dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="398dp"
+        android:layout_height="111dp"
+        android:background="#CFCFCF"
+        android:gravity="center"
+        android:text="Calculadora de números exclusivamente enteros™"
+        android:textAlignment="center"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/u3a2aEtOperando1"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/u3a2aEtOperando1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.024" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

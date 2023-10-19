@@ -15,6 +15,10 @@ import com.example.ejercicios_android.R;
 
 public class u3a2aCalculadora extends AppCompatActivity {
 
+    public static final String CLAVE_RESULTADO = "RESULTADO";
+    public static final String CLAVE_OPERANDO1 = "OPERANDO1";
+    public static final String CLAVE_OPERANDO2 = "OPERANDO2";
+    public static final String CLAVE_OPERACION = "OPERACION";
     RadioGroup rgOperacion;
     EditText etOperando1;
     EditText etOperando2;
@@ -28,10 +32,11 @@ public class u3a2aCalculadora extends AppCompatActivity {
         tvError.setAlpha(1);
         final float FREQ = 2f;
         final float DECAY = 2f;
+        final long DURACION = 240;
         tvError.animate().rotationBy(3).setInterpolator((float input) -> {
             double raw = Math.sin(FREQ * input * 2 * Math.PI);
             return (float)(raw * Math.exp(-input * DECAY));
-        }).setDuration(240).start();
+        }).setDuration(DURACION).withEndAction(()->tvError.setRotation(0)).start();
 
     }
 
@@ -64,14 +69,19 @@ public class u3a2aCalculadora extends AppCompatActivity {
                 mostrarError("Formato incorrecto");
                 return;
             }
+            String stringOperacion;
             int resultado;
             if (operacion == R.id.u3a2aRbSumar) {
+                stringOperacion = "+";
                 resultado = operando1 + operando2;
             } else if (operacion == R.id.u3a2aRbRestar) {
+                stringOperacion = "-";
                 resultado = operando1 - operando2;
             } else if (operacion == R.id.u3a2aRbMultiplicar) {
+                stringOperacion = "*";
                 resultado = operando1 * operando2;
             } else {
+                stringOperacion = "/";
                 if (operando2 == 0) {
                     //Mensaje de error
                     mostrarError("No se puede dividir por 0");
@@ -81,7 +91,12 @@ public class u3a2aCalculadora extends AppCompatActivity {
             }
 
             Intent i = new Intent(this, u3a2bResultado.class);
-            i.putExtra("RESULTADO", resultado);
+            i.putExtra(CLAVE_OPERANDO1, operando1);
+            i.putExtra(CLAVE_RESULTADO, resultado);
+            i.putExtra(CLAVE_OPERANDO2, operando2);
+            i.putExtra(CLAVE_OPERACION, resultado);
+
+
             startActivity(i);
         });
 
