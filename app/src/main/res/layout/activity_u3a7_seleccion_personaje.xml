@@ -8,7 +8,7 @@
     tools:context=".ut03.u3a7SeleccionPersonaje">
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/u3a7ivC1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/u3a7ivC2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/u3a7ivC3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/u3a7ivC4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

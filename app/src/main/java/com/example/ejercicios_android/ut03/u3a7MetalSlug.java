@@ -8,6 +8,7 @@ import com.example.ejercicios_android.R;
 
 public class u3a7MetalSlug extends AppCompatActivity {
 
+    public static final String CLAVE_IMAGEN = "IMAGEN";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

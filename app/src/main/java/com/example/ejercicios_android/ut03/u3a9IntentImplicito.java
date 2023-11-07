@@ -52,6 +52,11 @@ public class u3a9IntentImplicito extends AppCompatActivity {
             Intent intent = new Intent(Intent.ACTION_SENDTO);
             intent.setData(uri);
             intent.putExtra("sms_body", "Te veo hoy a las 6pm");
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            } else {
+                // TODO: Mostrar error!
+            }
             startActivity(intent);
         });
 
