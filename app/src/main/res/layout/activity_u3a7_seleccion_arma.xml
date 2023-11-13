@@ -4,6 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#23FFFFFF"
     tools:context=".ut03.u3a7SeleccionArma">
+
+    <ImageView
+        android:id="@+id/u3a7ivArmaH"
+        android:layout_width="377dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="52dp"
+        android:background="#2F000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/metal_slug_arma_h" />
+
+    <ImageView
+        android:id="@+id/u3a7ivArma2h"
+        android:layout_width="374dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="16dp"
+        android:background="#2F000000"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivArmaH"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivArmaH"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7ivArmaH"
+        app:srcCompat="@drawable/metal_slug_arma_2h" />
+
+    <ImageView
+        android:id="@+id/u3a7ivArmaL"
+        android:layout_width="373dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="16dp"
+        android:background="#2F000000"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivArma2h"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivArma2h"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7ivArma2h"
+        app:srcCompat="@drawable/metal_slug_arma_l" />
+
+    <ImageView
+        android:id="@+id/u3a7ivArmaR"
+        android:layout_width="372dp"
+        android:layout_height="140dp"
+        android:background="#2F000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7ivArmaL"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7ivArmaL"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7ivArmaL"
+        app:layout_constraintVertical_bias="0.317"
+        app:srcCompat="@drawable/metal_slug_arma_r" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
