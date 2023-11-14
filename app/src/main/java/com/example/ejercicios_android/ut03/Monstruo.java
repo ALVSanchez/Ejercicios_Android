@@ -41,23 +41,23 @@ public class Monstruo implements Serializable {
         }
         builder.append("\n");
 
-        for (int i = 0; i < ancho/2 && manosColocadas < manos; i++) {
+        for (int i = 0; i <= ancho/2 && manosColocadas < manos; i++) {
             builder.append("/");
             manosColocadas++;
         }
         builder.append("o");
-        for (int i = 0; i < ancho/2 && manosColocadas < manos; i++) {
+        for (int i = 0; i <= ancho/2 && manosColocadas < manos; i++) {
             builder.append("\\");
             manosColocadas++;
         }
         builder.append("\n");
 
-        for (int i = 0; i < ancho/2 && piernasColocadas < piernas; i++) {
+        for (int i = 0; i <= ancho/2 && piernasColocadas < piernas; i++) {
             builder.append("/");
             piernasColocadas++;
         }
         builder.append(" ");
-        for (int i = 0; i < ancho/2 && piernasColocadas < piernas; i++) {
+        for (int i = 0; i <= ancho/2 && piernasColocadas < piernas; i++) {
             builder.append("\\");
             piernasColocadas++;
         }
